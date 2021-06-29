@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook original-version='18.1' source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Google sheets (COVID -19 Tableau corse)' inline='true' name='federated.1kdf2iw1mws4n91dv2c691o8whho' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='COVID -19 Tableau corse' name='google-sheets.0a7699i1v8a9hw11kl3yy1ginoyw'>
+            <connection class='google-sheets' cleaning='no' compat='no' dataRefreshTime='' filename='COVID -19 Tableau corse' googleSheetId='18VqSHylji3nzAsfG2jY5huaorSM430s3FeTt8yZg29Q' interpretationMode='8' mimeType='application/vnd.google-apps.spreadsheet' server='' server-oauth='' username='elvisgitau10@gmail.com' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='google-sheets.0a7699i1v8a9hw11kl3yy1ginoyw' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:E515:no:A1:E515:0' header='yes' outcome='6'>
+            <column datatype='datetime' name='Date' ordinal='0' />
+            <column datatype='integer' name='Confirmed' ordinal='1' />
+            <column datatype='integer' name='Recovered' ordinal='2' />
+            <column datatype='integer' name='Deaths' ordinal='3' />
+            <column datatype='real' name='Increase rate' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='google-sheets.0a7699i1v8a9hw11kl3yy1ginoyw' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:E515:no:A1:E515:0' header='yes' outcome='6'>
+            <column datatype='datetime' name='Date' ordinal='0' />
+            <column datatype='integer' name='Confirmed' ordinal='1' />
+            <column datatype='integer' name='Recovered' ordinal='2' />
+            <column datatype='integer' name='Deaths' ordinal='3' />
+            <column datatype='real' name='Increase rate' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E515:no:A1:E515:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Confirmed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Confirmed]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Confirmed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovered]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Recovered</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Increase rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Increase rate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Increase rate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Confirmed Cases' datatype='integer' name='[Confirmed]' role='measure' type='quantitative' />
+      <column caption='Cofirmed Deaths' datatype='integer' name='[Deaths]' role='measure' type='quantitative' />
+      <column datatype='real' hidden='true' name='[Increase rate]' role='measure' type='quantitative' />
+      <column caption='Conirmed Recoveries' datatype='integer' name='[Recovered]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Admin/Desktop/Learning/Tableau Beginner/Google sheets (COVID -19 Tableau corse).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/20/2021 02:07:24 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Google sheets (COVID -19 Tableau corse)' increment-value='%null%' refresh-type='create' rows-inserted='514' timestamp-start='2021-06-20 14:07:24.183' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>514</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Confirmed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Confirmed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Confirmed</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>514</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recovered</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>514</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Deaths</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Deaths</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>514</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_7AFE2E2B35A94E6280EDD7747355F4D9'>
+            <properties context=''>
+              <relation connection='google-sheets.0a7699i1v8a9hw11kl3yy1ginoyw' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:E515:no:A1:E515:0' header='yes' outcome='6'>
+                  <column datatype='datetime' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Confirmed' ordinal='1' />
+                  <column datatype='integer' name='Recovered' ordinal='2' />
+                  <column datatype='integer' name='Deaths' ordinal='3' />
+                  <column datatype='real' name='Increase rate' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='covid-19 cases chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='TravelportSans Heavy'>Covid-19 confirmed cases</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Google sheets (COVID -19 Tableau corse)' name='federated.1kdf2iw1mws4n91dv2c691o8whho' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kdf2iw1mws4n91dv2c691o8whho'>
+            <column caption='Confirmed Cases' datatype='integer' name='[Confirmed]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Confirmed]' derivation='Max' name='[max:Confirmed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[tmn:Date:qk]' scope='cols' value='Date' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' value='Tableau Bold' />
+            <format attr='font-size' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' value='12' />
+            <format attr='text-orientation' data-class='subtotal' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' value='90' />
+            <format attr='wrap' data-class='subtotal' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' value='on' />
+            <format attr='vertical-align' data-class='subtotal' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' value='bottom' />
+            <format attr='text-format' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' value='n#,##0,,.0M;-#,##0,,.0M' />
+            <format attr='text-align' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' value='right' />
+            <format attr='text-orientation' data-class='total' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' value='90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#ff0000' fontname='Tableau Light' fontsize='15'><![CDATA[<[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]> ]]></run>
+                <run bold='true'><![CDATA[for <[federated.1kdf2iw1mws4n91dv2c691o8whho].[tmn:Date:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ff0000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kdf2iw1mws4n91dv2c691o8whho].[max:Confirmed:qk]</rows>
+        <cols>[federated.1kdf2iw1mws4n91dv2c691o8whho].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{E10D10FB-665B-40D0-BAA7-4D00571740A1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='covid-19 cases chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kdf2iw1mws4n91dv2c691o8whho].[tmn:Date:ok]</field>
+            <field>[federated.1kdf2iw1mws4n91dv2c691o8whho].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{60496B24-49DF-40D3-961A-DF4E442F5346}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='covid-19 cases chart' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO3deXRc5WH38e+9s89otO+yLFuLLVkG2cb7EgymhBZCEsJ2yJuTnrYcuvfQ
+      pqU5Pc1JE9L0nBIo8B6SkIQ0xQHzBgI4LA7FxS7eN1lCkmXt+y6NNNKsd3neP8YWmIBkrLEk
+      S8/nD5ClmXvvSPd3n+U+z30UIYRAkhYpK0A0GiUajc71sUjSrJsMwPj4+FwfiyTNOnUudqoo
+      ChaLZS52LUmXmJMAQCwEkjTX5iwAkjQfyABIi5oMgLSoWa/4ncKkpeY41f0qX9hSyG/fP4vd
+      5qS0MI3zrQM4kjKx+uoZd6+kPMNk/8lG7n7gLlxxPHhJmqkrLwEUlcLlyxHCAARaVEPXddqa
+      OylfX8FgdyfC6sGMjuELGSTaYvfbbDYbNpstTocvSTMTlypQYKQfT04RTm0MQ1EJTIRRbTZA
+      IUXVGIzYsFliu9I0DU3T4rFbSZqxK64CCdOgoaWTdLdKyJ1HlrUViq+nZGkq9fUt3HDDOsyJ
+      QdwuOz7dg3DPpL4lSVeHIoQQExMTs3on+OKNMF3XZ22fkvRJZC+QtKjJAEiLmgyAtKjJAEiL
+      mgyAtKjJAEiLmgyAtKjJAEiLmgyAtKjJAEiLmgyAtKjJAEiL2owmxHS3nqPDb2VLRRHVp08j
+      XKkU5XmpPddGcu4yxHATIXcBy5MMTtX38LmbtmKP48FL0kzNoARQSE9KoHdgmEBfI21+C8uW
+      5tJwtpqckiLqa2rwjfkZ6O2mb2iUsYEeDGIjQVVVFjzS/DCDGWEKDocDRQEtEsE0NE6+v5/B
+      gInVasU0DVCseBSNUU3FaYs9B0hVVRkAad644jNRmAbnG5swQ36i3nwyHRpWTyoVa1fSWFXD
+      8pKVeBISyctKQNgTSUlJRgUMw5DzAKR5Q06IkRY1WReRFjUZAGlRkwGQFjUZAGlRkwGQFjUZ
+      AGlRkwGQFjUZAGlRkwGQFjUZAGlRkwGQFjUZAGlRu/IACEHQP0RbVz8AwbFBas63YuphztfV
+      Mjweoq+jic6BUcLjw5yrb0EOfZPmmxk8sl/gH+jiVHOQZUsyqaurpL5DRx1pQc1dwdEjx0mz
+      jjFmyaM43UZVTQPLSgvlGgHSvDKjJZKys7OxqBD2deDTvThUk7EJjZRUL9FIGCwu7CKMX4eE
+      CxNi5BJJ0nwyowkx7e1tjI0MMRy0kJ/hJhCcICUjhfqqcySlZwGQ6TEZijqwqLGFseUSSdJ8
+      csUTYoQQREJBDAF2hxObVSUS0bDbrYTDYWx2J8LQUVUFQyhgGtgcDhTkhBhp/rjiKrmiKDjd
+      nku+53DEnvngcrlj37DE/m2Z2a4k6aqR3aDSoiYDIC1qMgDSoiYDIC1qMgDSoiYDIC1qMgDS
+      oiYDIC1qMgDSoiYDIC1qMgDSojaDFWIEo4Pd9I4LSpdlcv5cPaYjmeL8VM7XN5O2pBB9pJ2o
+      K5scj0F9+zDXry1HDoSW5pMZlAACM+ynrrkTIxols6CIzg9Oc/L4cZwZWZw6dZrurjaamtro
+      7umn+XydnBEmzTszmhCTmpqKqoDF7qDxzFEyytZh0w28Xid6NAKqA6cSwa+B2xYrbOSEGGk+
+      mdkKMefr8Q320XyukrqeAGo0QHZBLjUnq0jPWYKiqGR6wafH5guAnBAjzS/TTogZ6e9mzDdM
+      b8TNlopilHjsVE6IkeaJaRvBjVWV1I4EyfWmolUUy2VOpQVl2gCUrF6F06+S4rHKHhxpwZm2
+      DdDTWseps410trRjzMYRSdIsmjYAwhQMddTR0u+PS/1fkuaTaatAuSUV3KK6GXctlbeNpQVn
+      2gA0VVVT6wuS5xVolMhGsLSgTBuAFdevwjNhI8mlykawtOBMW6tpP3eG53/2LHvfOS6HMkgL
+      zrQlgGJPZlVZEfYEt2wESwvOFAEw6eroZvXWXaxaH6Slc0A2gqUFZ4pz2uR8TQ3+YAhN12hp
+      aJb3AaQFZ4oSwMp1ZXn8es8vMYXKhpvvkI1gacGZdjCcECYCBVVRPv4DopEggYggJcnD2PAQ
+      wu4hyWNnaHAYT3IqRsiPaXXjsQlG/GHSM1JRkYPhpPljihLAoPro+7T0+VBUFW96ATduW3Ph
+      Sc8AgoG2Oo61R7ljfR7HavpRg6PkZicSUDz46tvwRrvw2wspzVB5/8x57v4/9+KahQ8lSZdr
+      ijaASuGqChIwKVu3nqh/BPHRHysqS5bkY1EVxob6SM5ZjtcW4HzbGAVFSwmM+lBsXqxmgDFN
+      kOyUE2Kk+WeKACgkJKVQXl7AO6/vRSSkfOTqH1sgY3zcTzQcxuFNZWygiwnNSWFeAt0dvbi8
+      iQCkOw0GI3asFrlCjDT/THsfoLe7E09GCZ6oHx0+bAgLwbhuY+Pq5ShJuawrHgLnCtK8Dnp6
+      +lhRWIQRnsBus7DUtCGWZ8hhFNK8M20AEpOTGTlTTULCuktKAEVVyc1f/uE3PHmTX+bl58e+
+      cKXG/geAe+ZHK0lxNm0A0rILWFniJyUr7dI2gCQtANPe3G36oAZ3WiYJbudsHI8kzappA2Aa
+      IZobG+noHpAlgLTgTD8jTIDVZsNqtUz3Ukm65kzfCE7N5IbSUkpy05ARkBaaKUsA0zCYGO3h
+      /z3/C/YdOCkHw0kLzpQlwEBLCxFnMkuyxtF1efpLC88UAdBp7+1HMdz8wZe/jMfuklUgacGZ
+      ogpkIS/LQ925Ok4cO0b1uRbM2TsuSZoVU5QACktWruXe1Azae4ZxJqTJKZHSgjNtN2hj5RmG
+      AyEi0ai8DyAtONN2gzpdFo6cOkVB6XpWlRV+4mtEdILjp6qwOJNZuTyF2nPtJOcUIIYbCbmX
+      U5hscKKui5tu2SEHxEnzymUskaSQkZ1NJBz81CqQHhxhOGzBPd5Nla+LZWtu4PSxSrLcGv7x
+      HtyGk8BIPwagqirKx2eXSdIcmbYKpOs6Vrsdc4rpi9FIFKtFwTB1NA0sFhVhmqBY8Sgao5oF
+      x4U7yYqiyABI88aUJUAkEqHixttZOjyMIyHxU7tBHd4UHKIHNSGd1SuzqKmuo2hlGepEH16P
+      gz49ibS02HxgwzAm5wRL0lybYlK8zuEDx9l041YsmBw9eIwNO7fF5ckQclK8NF9MUQJYcIoh
+      XnjxZVxKGGtW6QzWVJWk+WnKx6IIU2d4oJ8IdrIy07Gq8am7yxJAmi+mbAQrqpX07DxyMxPp
+      6eiVd4KlBWfaXqBgIIApNFqb5RJJ0sIzbbW+q/4UhysbSM6/Xg6FkBacaQOg6SZLi4rRhRwI
+      IS0801aBUlJT6O3uQTNkAKSFZ9oAdLS0EhEObGZ4No5HkmbVtFWg0nWbcbU24rdmyQkx0oIz
+      RQA0Xv7x/+X8SASPy0VmwXUY61bKm2HSgjLlneDNu24jp3+IUCCI1SsnxEgLzxQBEPS0t9DY
+      3o9ic1CYki8DIC04UwYgGo1itdsBgd8/jsmntJqFoLejieGwldLCbBrPN5GeX4Q20onmyiTT
+      bdDU6aOsvERWoaR5Zco1wrb//pfZfhkbiY52cLpplFt3VFB/8n1s+aUcO3qCdLufMXWcaLqN
+      upoGimUApHkmLiufTviGCYXGOXjgfxnwayQnedCiYVCdOAjj18Fji/UhyRVipPkkLgFIyl6K
+      1yYQeoTsvEzqKmtIzsgGIMNtMhx1YFHlCjHS/BKNRqdfJfJy6bqGQMFqsaBrGqrVBmZs9peJ
+      AsLEYrWiIIdDS3NL0zQ6OjrIzMyMX5Xcav2wWmOzX3j2gxrbvPqR/0rSXDEMg66uLmpra0lM
+      TCQvL0+2SaXFYXx8nEOHDuFyudi0aROpqakoiiIDIC1cpmnS399PY2Mja9eupaKiguzsbFT1
+      w9qIDIC0II2OjlJVVUUgEKC0tBSXy4XX6/2d18kASAuGEIJwOIzf7+fMmTOUlJRQWFh4yRX/
+      4+LWC/RZyF4gKZ6EEASDQWpqahgZGeHmm29GURTs9ukfxClLAOmaFg6HaWxspKmpiYKCAnbu
+      3InD4bjs98sASNekSCTC6OgopmkSiUT4vd/7PRISEj7zdmQApGuKpmm0t7dTU1NDRkYGW7Zs
+      IScn54q3JwMgXTMGBgY4deoUdrudbdu2kZ6ePuMHLctGsDSvmabJ0NAQ/f395ObmEo1GyczM
+      jNvDlWUJIM1LQggGBwepra0lEAhQUVFBWlpa3PcTtwDoWoRAWCfR42R8fAKHOwERDWJaHDgs
+      gkBIIyExQY4IkqYkhMAwjMmenRUrVlBYWHjVhtDHLQAN1Uc4fG6C29Zl0z4OIU3FHWjB7yxh
+      VabCgVP13Pu1+3DFa4fSghMOh6mtrSUajbJmzRoKCws/U5fmlYjLBdkIDdMfspPmsdHTM0zJ
+      qhLGhwdRHUlYzQBjUUGKK5ZgOSFG+ighBIFAgMrKSvbt24fdbmfdunW4XK6rfvJDnEqAiTE/
+      NovA5xsmLyWTwf4R7G43ECbNrjEYsWOzfDghRq4QI0FsQko4HKalpYVwOMyuXbtISEiY1SW0
+      4tgLZNDdPUhudgqtLe2k5hZgBEdx2K0EDDsi5CcjLw8LshdosTMMg7a2Nurr68nNzWXt2rVz
+      diyyG1SaNUIIurq6qKurw+l0snr16slx+XNFdoNKs6K7uxuAUCjEdddd9zvj8ueC4913ZQCk
+      q0cIwcjICFVVVUQiEVavXk1JScncLpMbiWA/cQLnG2/geuUVGQAp/oQQCCGorKykv7+fsrIy
+      lixZMne9f6aJ2tODa+9enHv3YqurA11HeL2yDSDFjxCC8fFx6urqSE1NJT09Ha/XO3cnvqbh
+      eO89XK+9hmP/ftTxcYTVilZeTujLXyZ8++2yBJDiIxwOU19fT3t7O0uXLmXp0qU4nc7ZPxBd
+      x9Lbi+ull3C+8QbW5mYwDMzMTIJ33knw7rvRKirgwrHJAEgzcrEUP3r0KAkJCdxyyy14PJ7Z
+      PxBNw7F/P+6XXsJ+5Ejsag9o119P6IEHCN96K2Z29u+8TVaBpCsSiURobW2lvr6eNWvWkJ+f
+      j6qqs9vA1TSsTU24fv1rXL/6FerAAABmbi7hW24hdP/9sav9FMckSwDpM+vq6qKqqgqn08nW
+      rVvJyMiYvRM/HMbzn/+J2tuL7fx5bKdOoQSD4HAQ3baN4P33E7npJkRKypQn/kUyANJlEULQ
+      39+Px+Ohp6eHdevWzWgm1mcWjWI7cwb3Cy/geu01FF1HAEZ+PuGvf53Qffehr1jxmTcrq0DS
+      lC5OSKmursYwDDZs2EBKSsrsXPF1HWttLa633sL55ptYOjpA18FuByEYf/hhgg8+iHC7L+tq
+      /0lkCSB9Kk3TOHbsGENDQ5SXl7N8+fJZ6dJUh4Zw7t2Lc98+7CdOoESjCEAvLyf0la8Q2bYN
+      JRRCW7sWZng88SkBhMlgfy/C7iUjyUV//wAJqZkYAR+GLQGv3WTQFyIrJ0MOhpvnLg5Pbmho
+      YNmyZQQCAXJycrBar+61UhkZwX7qFJ7nnsN+7BhEowDoJSVEPv95Ql/8IvqqVRdeHL/SJy6f
+      Sg+OMhY2aD5+gKwlaej2ZIbOd5Ko9+C3L2dlhsrhyvN85av3ygkx89TFh0s1NDTQ0dFBUVER
+      Ho+H1NTUq7ZPJRjEdvYsrldewXHwIGpfHwBmSgrRG2+M9dnfcAPiEx5pGC9xCYDVk4KlvQU1
+      OZegb4iiTeV0tBwjKSkBqxnAryWQ5IjtymazxdYMMM147FqKg4uLlrz77rtkZ2dPjsu/KgwD
+      a0MDzrffxvnmm9jOnQNAOBxEt28n+MADRLZtQ0wz//fUqVM899xzJCcn88gjj/Bf//VfnD59
+      miVLlvAv//IvWCwWBgYG+Md//EdM0+QP//APqa+vp7e3l29/+9u89NJLHD58OD4BCPY3cvT8
+      CLu234C/K0pnaxfupGTAT4bTYDDiwConxMw7uq7T1tZGY2MjGzdu5NZbb8XpdMa/gWuauF54
+      gYQf/xjhdmNtaECJRBA2G9H16wn/wR8Q/v3fx8jLg8usakWjUf72b/+W//iP/+DEiRMcPHiQ
+      P//zP2flypWTo0xbWloQQvDwww9TUlLCb37zGxobG+nv7+fAgQOcO3cuPgGwJeawY70LLRJl
+      2XUbGB4cpGzFSsxIAJvVQoFpRRRlcvUnuEmXwzRNOjs7qa+vx+VysWHDhvg/cUEIlLExHPv3
+      43rjjUvuzprZ2YTuvJPwF74Qu1F1Be2LNWvW8OSTT2Kz2Vi3bh2bNm3i5ZdfZmxsjJ/+9Ke4
+      XK7JKtx3vvMd7rnnHlRVZdOmTezfv5/k5GTcbnecAuDykp//YT0tOyc39oUzOfY/AFn7n3MX
+      n5fvdrtpbm5mzZo1ZGZmxu+KLwTqwAD2I0dw7d2L4+BBlHAYACM9HdNqJXzzzYw99hjMcL7v
+      008/TV9fH/fffz/BYJAVK1awdu1annjiCRobGzl9+jQVFRXccccdHDlyhK6uLgC2bNnC97//
+      fR566CGqqqpkN+hiYJomPp+P6upqIpEIN954Izt37ozPhBTTRPX5sL//Ps633sJ+9Cjq8DAA
+      IjmZ8C23EL7jDqKbN4MQmKmpM+66BCgsLMQwDN577z3uvPNOdF3n9OnTfPvb3yY1NZWkpCQy
+      MzM5ePAg6enp3HfffRw5coRVq1Zx3333sXXrVsbHx+WNsIUuEAhw9uxZRkdHKS8vJz8/Py7t
+      L8Xnw/H++zj37Yv14Ph8AJiJiUS2bSNy221Edu7EzMiY8b6uJhmABUgIwdjYGC0tLRQXFzMw
+      MEBBQQFWq/XKqzsXrvS248dxvf46jkOHUEZHQQhESgrR9esJffGLRD/3OcyUFPiUkF18qnNW
+      VhZtbW1EIhEA8vPzcbvdQGw9r97eXrKysjBNk5GREQoKCgiHw/T29pKfnx+3odayCrSACCHQ
+      NI3q6mo6OzspKCjA5XJRXFx8JRsD00QJBLAfPozz7bdxHDmCpacHAeB0Ern5ZsK33050+/ZY
+      D8404RoYGOCv/uqvyMrK4qmnnuLVV1+lq6uL/fv3s2fPHkpLS/H7/fzlX/4lKSkpbN26lYmJ
+      CZ555hn27NnDiRMn+N73vscLL7zAmjVrruh39HEyAAuEYRiMjo5y9OhRcnNzue2223C5PkPH
+      g6Zh6e3F0tqKraYGW1UVtro6LK2tKEIAsepN+OabY92Wn//8tH31H2e323nwwQd58803AXj4
+      4Yc5ceIE4XB4MqQ1NTX09fWRnp5OZmYmExMTbNy4kVOnTtHY2MjKlSs/0z6nc80GYHx8nG99
+      61u0tbXxd3/3d2zfvh2Ad955h2eeeYaysjIeeeQR/uiP/ojPfe5z/PVf/zVf//rXycvL49/+
+      7d8mtyOE4OWXX+b5559n06ZN/P3f/z12u51wOMzu3btpb2/nu9/9Lj/+8Y/Zt28fv/jFL9i3
+      bx8//OEP2bNnD1lZWXP1K5i84jc3N9PZ2cmOHTvYuXMnHo/n06s6pgmRCOrICNaWFuxnzmCt
+      q8NWV4c6NITi96MIgVAUcDox8vLQV6wgfPvtRHbsiE0qucJhEcnJyZd0t2qaxnPPPcdDDz2E
+      qqqMjIygKAq5ubncc889PPHEE+zatYs1a9ZQWVlJYmLiJy50NxPXbACOHDmC2+3mu9/9Lv/+
+      7//Oli1bEELw85//nMcee4wnn3ySM2fOYLFY+OCDD+ju7mZ8fJyRkZFLthMIBNizZw/PPvss
+      jzzyCI2NjZSXl+Pz+RgbG6Pvwu15n8+H2+3m3LlzVFVVoes6hmHMxUcHYif/xYUiPB4Pa9eu
+      vfSKHwrFqjEOB5b2dqyNjVgbGrBXVmJpbcXa3j7ZRQkgVBVj2TK07dvRV61CW7UKY9ky9MLC
+      uPTaABw/fpzvfe97dHd38/TTT7Np0yZUVaWiooLR0VG++tWvsnv3bmw2G4899hgbN27EYrGQ
+      lpbGkSNHqKiooLm5OS7HctE1G4Dx8XGysrLIzMwkHA5jmiZCCHRdJy0tjczMTAKBAC6Xi7y8
+      PF577TW2bdtGY2PjJdvRNA1VVUlNTSUtLY1gMAhATk4OX/jCF2hoaJh87bZt2zh8+DCGYVzV
+      MTJTMQyDQCAw2cjduHEjGYmJWCYmUBsaUAcHsdbVkfDMM7G7rVYr6vg4RKOxK7uqIhISMJYs
+      QSstRbv+erSKCvSyMsyEhFj//FUa6rxu3Tp2794NxIbEWCwWnnjiCVRVJSUlhZdffhm3280z
+      zzxDOBzG7XZjGAaKonDbbbdhs9m46667Lmvxu8t1zQagrKyMX/7ylwwMDFBaWsrzzz9PQUEB
+      BQUFPPXUU5w+fZp77rkHiP3in3zySf7pn/7pdwLg9XpJTEzk8ccfp6mpCbvdzje/+U3+7M/+
+      jNdff522tjbeffddINb3/Oyzz/KlL32J+vr62fuwpokwTQb6+qg7dAhrayu3pqZS2tuL/Re/
+      wNLZiTo2hjo8jHJhFCWAABS7HSM7G23dOrRVq9DWrMHIz8fIzp7xzajPaqoHIyuKMjmX+KOv
+      u9hle/Hf8R6Ves12gwohqK2tpaOjg127dtHQ0EBSUhJpaWm89957lJSUUFxczLFjxygvL+fs
+      2bOsXr2apqYmNm/efMm2xsbGOHDgABUVFaSnp3PmzBmKi4s5evQoAFlZWaSkpJCRkUFDQwNl
+      ZWV88MEHbNy4cbLrbsaEQJmYwLVnD5bBQaJr1mDt6MDS0cF4Wxun29uZ6OqiQtMoAT7ayShs
+      NsyMDMy0NPT8fIz8fCydnaAojH/zmxiFhfE5xgXomg3ANcM0QdNQIhGUSATV50Pt68PS04Ol
+      owN1aAhrZydqf3/sZ/39KMSu3hPAAOCw2fA5HBR7vVgzMtCXLUMvLsbIyUEvKsLMy8NMSIjN
+      jLp4Vb/YPpGDDqd0zVaB5o1oFFtNDY4DB4jecAOKpqEODmLp78fS1YWlpwdldBTLwACKz4ca
+      Cn3iZoSiIC4MQQ4oCmfKy2kpLqZo61ZKy8rIyshgNDs7Nh3wcsgT/7LEPQCDbbVUtwxiT8zA
+      6jvHuLuU1RmCd082cM9XvzLzIXFC4Hz1VTzPPhsbQltUdPnvNU2Uj52AzjfeQB0aInznnWAY
+      KJoW6woMhVCiUZRAIPYeTUP1+2M/v/A9JRgEXY+9TtcRqhqrylzoN4dY74pwOhEJCZi5uWjp
+      6Zjp6RhLl2IsXYqZloaRnY2RnY2ZkkLX//wPZxsbydq+ne2rV+NyudCusFFqGAatra3YbLbJ
+      x5YIIejs7CQcDrNs2TLGxsbw+XwUFxczMTFBV1cXxcXFcW1ozmdxD0BbcxflGzZy9MAJshO9
+      CM2PL+wm6cLvc6YTYpRQiIRnnsFWV4e9ujpux22vqrrk35OnsKJ82CtycfDYR74n7HawWhG6
+      jpmdTXTDBowlSzBTU9GXLcPMzY1VT7xezKSk32l4CiEwTZO2tjZG6uoo3r6d7Tt2kJycPKPP
+      I4Tgpz/9KYcOHaKwsJB/+Id/wOPxUFtbyw9+8ANM02Tz5s1Eo1F2797Nq6++yttvv833v/99
+      Dh48SH5+/oz2f62IewCcdpWJiTAWmw3QSbFEGYwkYbPETp6ZTogRbjfRLVuwNjURXbcOvaTk
+      8t+sqoiP3R11vvMOSjBI6M47MbOyEHY7wutFuFyxr12u2HusVkyvF2w2hNsdu6pf+L4yPIzj
+      0CGiW7d+psFfuq7T2dlJXV0dycnJlJeXz/jEvygSibB3716KiopITEycHPlZWlrKU089xVNP
+      PTX5N9i8eTMnT56kubmZos9Soi4AcQ9A6fqN1NW3cMP6GzAnBnG77Ph0NyJBjdvO/P/8zwQe
+      fBAjK2vGXXkTDz8MmoaYQb++SEsjcMcdHDhwgIaGBu6++24yLgShqamJt956i/Xr17Np0yZ+
+      /vOfU1RUxObNm/nhD3/I2NgYf/EXf0F6ejqqqqLrOo8++iiVlZUUFRXx6KOP4na7qays5F//
+      9V/RdZ2/+Zu/oampiV//+te88MIL7N+/nx/84Ae88sorlzyrx26387WvfY2f/OQnnDlzZnK2
+      1De+8Q127drFPffcw49+9CM2btzIoUOHrsqd1vku7isU2FxJVKxdS15GEvnLi0nLXkrxknRK
+      ysqI2wM17HaMpUvj0o8tvN4ZnfwX1dbW8pOf/ARFUXj00UcRQhCNRvnWt75Ffn4+jz/+OG1t
+      bbz44os8/vjjHD9+nN/+9re0tbWRmZk5eYVWVZV7772Xe++9l7GxscmesqKiIv7kT/6ElStX
+      MjQ0hN/vJzk5mZqaGqqqqlBV9ZI70w6Hg7vvvpvvfOc7TExM4HK5ePDBB9m/fz9nz57lN7/5
+      DT/72c8QQpCRkUFnZyerV6+e22f3zwHZCxQnra2tbNy4kXvvvZeHHnoITdOwWCykpKRw8OBB
+      /H4/r7/+OjabjaysLAKBANdddx3DFyaPXKSqKgkJCQwPD2MYxmQAPB4P4XCYQCCApmkA7Nix
+      g0OHDqFpGunp6ZdsR1EUHnjgAe666y4sFgtWq5UXX3wRq9XK7bffDjA5PFpVVW666abJny2W
+      BjBchRJgsUpLS6OlpYXGxkYSEhKorq6mubmZP/3TP+Xmm28GmFztfNu2bezevZutW7f+znZ8
+      Ph+/+tWvcDqdDA0N0dbWxje+8Q327t1Lb28vDoeDjo4OAAoKCjh58iQrVqz4xNldiqLgcrmw
+      2+2oqorT6cRqteJ2u3G73djt9skhCQ6HA4vFgtPpnPOli2aTLAHiZMOGDRw/fpwf/ehHPPzw
+      w1RWVuLz+eju7qanp4c//uM/ZufOnZw8eZIdO3ZQW1vLqlWraGlpuWQ7Xq+Xbdu2MTAwwNNP
+      P01WVhZf+tKXKCwsnKzHb926lba2tsnRlUVFRZSUlMzZ+KRrmbwTfBXU19fT1NTEkiVLWLFi
+      RfyGS0hxJwMQJ9FolObmZpxOJzabjaSkpFlf9Fn67OYkAMCMH7JqtVrjEqCL9d2ZPqnOYrEQ
+      jUZnvEhEvI4nXtuB+P2u59t2YA7bABd7MuZ6G/Gi6/rkXd2ZsFgscdlOPF38bDYGGCwAAASn
+      SURBVPEQj79ZPI/nmm0Ez7fqU7z+IBcn9swn8TqeeP3N4vn7uWb7u+bbSRIvC/Vzwfz8bHMe
+      gNGBbsbDM5tbK4RBT3sTja3dGIZOW+M5+kcmiAZHqa2pZTQQITA6wLmGFjRjbv4IY4PdNHX0
+      ferPTT1Kb/8gAgiMDlJTe45ARMc30EVDa9fk52rrHkQYEc7X1eKbiMzeB5hSlI6PfjZDo7tv
+      gI+e78I06GptpKm9F8PQaDlfx+BokPDECDU1tfiDUcaH+6hvakM3Z+9vNOdVoM6GKpzFSYQY
+      x+pKxEaUUDiCOzEFPRrBZQNDdTAxOoLVnYhD0YlETbCA1+MmGDLwOEBxJjFw9jj+4WR09xLG
+      jh6ktGINeeku/vfIcWx6mNKCZKoanawvzZ31z3nugzO0j7tYlpuKzzeKiZWUBDsToSiRiRH8
+      UStd3T1kZ2XgD0RId0Y4cvwMejjE0iSTesMgJTWH2sP/Q0+ih9TC1Rw+fII7Pr9j1j/L7wpx
+      +nQdKYkuHG4HkeAE1bXn8TiseDxuglGB22pg9aTSeeYI/t5ESC3k/KH/ZfXa1eQkWzl07BRK
+      NEBJjpuaNjdrCjNn5cjnPAAAZjRI3flKOkYFy5NNkjOz6W3swRj3UZZjwe9dyUhLJT1+wbJE
+      nZ6Al5x0QaI3kbAjj/UrswkP1RL25JAkxvEkpRBQIjhdTk6drKa8bDUNDc0kJrpp757d3i4A
+      YQToHVXJdvrp6uvjTHUTGWoAT1oKVU2DrF2RRUT9cCiD16lwqHqAstXFNLQMk+iO0GvYMJur
+      8SxZhehrJC0nhbpTgdi831n/RB9z4YJddfQIhWuKaO6MPVigofoULm8iRnIRFctTGe+thaSl
+      WMwBEpLTGBZBnC4Hp4/XUFp+HY0NTSR6XfSOBWbt0Oe0CjQ21Euf38SuDxNSvSTYVYRiITkl
+      ES2qgzZB/8g4E6O9hJVEEhwKwuJg047NrCktora+h9KiHMKjPbxf2UZ+VgppmVl0t9Sh29Oo
+      P/7fWFLycdhtJFh0Glr6ycmbnSvLR030dSCcbhK8bppautEiISKGit2qsLJiEznJH33Mn877
+      /72f1Pyl2G0eLNooLQNBEqJdnG2fIDPZSc7STM6d/ICk7Jw5P/lNXaPlXD2J2VlYLSa9vUOT
+      VZ+VKwqpaR5iZUEGgeEOjtZ2syQjkfSsbDoaqhHuLD54/x1cWUtx2K04lSiN7cPk5sb5Ue1T
+      mLP7AABaNIxmKLgcVkKhMIrFikURWKxWNF2gmBqGAJvdTjQSQbVYsShgsdkZ7qynedTK5ooS
+      hKETDIYQKLg8brRwCIvNidAjRHUDi82Ow6IQ1gxcLifqLN+cMvQohrBgswgCI30creth24br
+      cdhUDCxYMDGEgjBN7A4b4UAQ3TSxOZxYMNAMcNhUgqEIiqLidrsIBYPYXe7JeRZzRQgzdixO
+      N8KIoukmFqsNIQS+zvN0RTxsKC/ENDSCwTDiwvFHQkGsDhemFkbTTax2BzZVENFM3K6rsEjH
+      p5jTAEjSXJvzXiBJmksyANKiJgMgLWoyANKiJgMgLWoyANKiJgMgLWoyANKiJgMgLWoyANKi
+      9v8B8X8K2NhpBNUAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
