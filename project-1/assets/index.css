@@ -1,0 +1,58 @@
+/* div {
+  display: inline;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 0px;
+} */
+body{
+  font-family: Nunito;
+}
+
+
+li {
+  /* display: inline;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-right: 0px; */
+  align-items: right;
+  display: flex;
+}
+#shakespear{
+  color: hotpink;
+  font-family: Nunito;
+}
+/* #umoja, h2 , h5{
+  padding: 10px;
+} */
+img{
+  height: 300px;
+  width: 300px;
+}
+#upili{
+  align-items: right;
+  text-align: right;
+}
+#utatu{
+  align-items: left;
+  border-image-width: ;
+}
+#utalii{
+  float: left;
+}
+h5{
+
+}
+
+#two{
+  color: lightpink;
+}
+#one{
+  display: inline;
+  align-items: left;
+}
+/* .three{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 300px;
+} */
